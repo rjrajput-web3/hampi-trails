@@ -257,7 +257,12 @@ h2.title{font-size:clamp(34px,4.6vw,52px);color:var(--green-950)}
 .confirm-badge{width:74px;height:74px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:#8a6d2f;font-size:30px;margin:0 auto 18px}
 
 /* ---------- CONTACT / MAP ---------- */
-.map-frame{width:100%;height:420px;border:0;border-radius:3px;display:block}
+.map-card{background:#fff;border:1px solid var(--line-dark);border-radius:4px;padding:36px;box-shadow:0 18px 44px rgba(20,40,30,.07);margin-bottom:30px}
+.map-card .map-pin{width:56px;height:56px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:#8a6d2f;margin-bottom:18px}
+.map-card .map-pin svg{width:26px;height:26px}
+.map-card h3{font-family:var(--serif);font-size:26px;color:var(--green-950);margin-bottom:8px}
+.map-card p{font-size:15.5px;color:var(--muted-dark);margin:0}
+.map-card .map-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
 .info-row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line-dark)}
 .info-row .ic{color:#8a6d2f;flex-shrink:0;margin-top:2px}
@@ -788,8 +793,16 @@ body{overflow-x:clip}
         </tbody></table>
       </div>
       <div>
-        <iframe class="map-frame" title="Map — Hampi Trails, Hanumanahalli, Gangavathi" loading="lazy" src="https://www.google.com/maps?q=Hampi%20Trails%2C%20Huligi%20Gangavathi%20Road%2C%20Hanumanahalli%2C%20Gangavathi%2C%20Karnataka%20583227&amp;output=embed"></iframe>
-        <p style="margin:14px 0 30px"><a class="btn dark-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Hampi+Trails+Hanumanahalli+Gangavathi+Karnataka+583227" target="_blank" rel="noopener">Open in Google Maps</a></p>
+        <div class="map-card">
+          <span class="map-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <h3>Find Us on the Map</h3>
+          <p>Hampi Trails, Huligi – Gangavathi Road, near Anjanadri Hills, Hanumanahalli, Gangavathi, Karnataka 583227</p>
+          <p style="margin-top:10px">On the Huligi–Gangavathi road, just below Anjanadri Hills. View the property location, photos and guest reviews on Google Maps, or start turn-by-turn directions.</p>
+          <div class="map-actions">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hampi+Trails+Hanumanahalli+Gangavathi+Karnataka+583227" target="_blank" rel="noopener">Open in Google Maps</a>
+            <a class="btn dark-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Hampi+Trails+Hanumanahalli+Gangavathi+Karnataka+583227" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
         <div class="form-card">
           <h3 style="font-family:var(--serif);font-size:26px;color:var(--green-950)">Send an Enquiry</h3>
           <form id="contactForm" novalidate style="margin-top:18px">
